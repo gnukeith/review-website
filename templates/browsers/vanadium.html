@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanadium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/css/vanadium.css">
+</head>
+<body class="bg-gray-900 text-gray-100 flex flex-col items-center justify-center min-h-screen">
+    <div class="w-11/12 md:w-4/5 h-screen m-2 p-4 rounded-lg gradient-border-vanadium flex flex-col items-center">
+        <div class="flex items-center space-x-4">
+            <img src="/static/img/vanadium.svg" alt="Vanadium Logo" class="h-12">
+            <h2 class="text-4xl font-bold underline">Vanadium</h2>
+        </div>
+        <hr class="w-4/5 my-4 border-gray-600">
+        <p class="text-center">Vanadium is possibly the most secure browser out there, building on Chromium's strong security features with additional hardening and privacy enhancements.</p>
+        <div class="w-11/12 md:w-4/5 mt-8 p-4 rounded-lg bg-gray-800 flex flex-col items-center">
+            <h3 class="text-3xl font-bold mb-4 text-center">Security Features</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                <div class="p-4 bg-gray-700 rounded-lg">
+                    <h4 class="text-xl font-bold">JIT Compilation Disabled</h4>
+                    <p>Vanadium disables Just-In-Time (JIT) compilation by default, reducing the attack surface for vulnerabilities.</p>
+                </div>
+                <div class="p-4 bg-gray-700 rounded-lg">
+                    <h4 class="text-xl font-bold">Enhanced Exploit Mitigations</h4>
+                    <p>Implements stronger Stack Smashing Protection (SSP) and type-based Control Flow Integrity (CFI).</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="w-11/12 md:w-4/5 mt-8 p-4 rounded-lg bg-gray-800 flex flex-col items-center">
+            <h3 class="text-3xl font-bold mb-4 text-center">Sandbox and Isolation</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                <div class="p-4 bg-gray-700 rounded-lg">
+                    <h4 class="text-xl font-bold">Robust Sandboxing</h4>
+                    <p>Leverages Chromium's sandboxing technology, isolating each site into its own sandbox.</p>
+                </div>
+                <div class="p-4 bg-gray-700 rounded-lg">
+                    <h4 class="text-xl font-bold">WebView Integration</h4>
+                    <p>The Vanadium rendering engine is used for the WebView component in GrapheneOS, benefiting other apps.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="w-11/12 md:w-4/5 mt-8 p-4 rounded-lg bg-gray-800 flex flex-col items-center">
+            <h3 class="text-3xl font-bold mb-4 text-center">Privacy Features</h3>
+            <div class="p-4 bg-gray-700 rounded-lg w-full">
+                <h4 class="text-xl font-bold">Enhanced Privacy</h4>
+                <p>Implements enhanced fingerprinting resistance and stricter referrer policies to protect user privacy.</p>
+            </div>
+        </div>
+    
+        <div class="w-11/12 md:w-4/5 mt-8 p-4 rounded-lg bg-gray-800 flex flex-col items-center">
+            <h3 class="text-3xl font-bold mb-4 text-center">Open Source</h3>
+            <div class="p-4 bg-gray-700 rounded-lg w-full">
+                <p>Vanadium is open source, allowing for community review and auditing of its codebase, enhancing security through transparency.</p>
+            </div>
+        </div>
+    
+        <div class="w-11/12 md:w-4/5 mt-8 p-4 rounded-lg bg-gray-800 flex flex-col items-center">
+            <h3 class="text-3xl font-bold mb-4 text-center">Threat Model</h3>
+            <div class="p-4 bg-gray-700 rounded-lg w-full">
+                <p>Designed to protect against browser exploits, side-channel attacks, cross-site scripting, user tracking, and malicious extensions.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

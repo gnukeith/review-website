@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firefox</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/css/firefox.css">
+</head>
+<body class="bg-gray-900 text-gray-100 flex flex-col items-center justify-center min-h-screen">
+    <div class="w-11/12 md:w-4/5 h-screen m-2 p-4 rounded-lg gradient-border-firefox flex flex-col items-center">
+        <div class="flex items-center space-x-4">
+            <img src="/static/img/ff_logo.svg" alt="Firefox Logo" class="h-12">
+            <h2 class="text-4xl font-bold underline">Firefox</h2>
+        </div>
+        <hr class="w-4/5 my-4 border-gray-600">
+        <p class="text-center">Firefox is a free and open-source web browser developed by the Mozilla Foundation. It's known for its flexibility, performance, respect for privacy, and robust support for extensions.</p>
+
+
+        <!-- New section for Firefox Isolation -->
+        <div class="w-11/12 md:w-4/5 mt-8 p-4 rounded-lg bg-gray-800 flex flex-col items-center">
+            <h3 class="text-3xl font-bold mb-4 text-center">Firefox isolation</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                <div class="p-4 bg-gray-700 rounded-lg">
+                    <h4 class="text-xl font-bold">Project Fission</h4>
+                    <p>Mozilla's Project Fission aims to improve browser security by isolating websites from each other.</p>
+                    <a href="https://wiki.mozilla.org/Project_Fission" class="text-blue-400 underline">Learn more</a>
+                </div>
+                <div class="p-4 bg-gray-700 rounded-lg">
+                    <h4 class="text-xl font-bold">Security Concerns on Android</h4>
+                    <p>Avoid Gecko-based browsers like Firefox on Android due to their vulnerabilities and lack of internal sandboxing.</p>
+                    <p>Gecko-based browsers add a significant attack surface and bypass many hardening measures.</p>
+                    <p>Firefox for Android does not have internal sandboxing, unlike Chromium-based browsers.</p>
+                </div>
+            </div>
+            <div class="w-full p-4 mt-4 bg-gray-700 rounded-lg">
+                <h4 class="text-xl font-bold text-center">Detailed Analysis</h4>
+                <p>Firefox's sandbox on Android is currently weak and lacks site isolation.</p>
+                <p>The desktop version's sandbox is gradually improving, but it's still weaker compared to other browsers, especially on Linux.</p>
+                <p>The Android version of Firefox does not utilize the OS isolatedProcess feature for strong isolation.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

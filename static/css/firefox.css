@@ -1,0 +1,29 @@
+/* firefox.css */
+
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Firefox border code */
+.gradient-border-firefox {
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(
+        to right,
+        #FFA436,  
+        #FFA436,
+        #D04900,  
+        #D04900,
+        #00539F,  
+        #00539F
+    );
+}
+
+
+/* Ensure logo image size */
+.h-12 {
+    height: 3rem; /* Adjusted to match Tailwind's h-12 class */
+}

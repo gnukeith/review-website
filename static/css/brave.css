@@ -1,0 +1,15 @@
+/* Brave border code */
+.gradient-border-brave {
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(
+    to right,
+    #FB542B,
+    #FB542B,
+    #a3278f,
+    #a3278f,
+    #4f30ab,
+    #4f30ab
+    );
+}
